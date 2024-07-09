@@ -1,0 +1,121 @@
+body {
+  background: linear-gradient(to right bottom, #e0f2ff, #c2d6f0);
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-direction: row;
+  font-family: Roboto, sans-serif;
+}
+
+#container,
+#container-fav-pokemon {
+  width: 45%;
+  min-height: 80vh;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px 20px 2px rgb(140, 91, 0);
+}
+
+#search-section,
+#cont-types,
+#fav-pok {
+  margin: 15px 0;
+}
+
+h2 {
+  color: #303952;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h3 {
+  text-align: center;
+}
+#section-seaerch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#id {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#cont-img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#cont-name,
+#status-quality,
+#cont-weight,
+#cont-height,
+#cont-hp,
+#cont-attack,
+#cont-defense,
+#cont-special-attack,
+#cont-special-defense,
+#cont-speed {
+  display: flex;
+  color: #303952;
+  align-items: center;
+  justify-content: space-between;
+  text-shadow: 0 0 1px orange;
+  font-size: 17px;
+}
+
+#search-button,
+#addFavPokemon,
+#Clear,
+.removefromlist {
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #fd7e14;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+#search-button:hover,
+#addFavPokemon:hover,
+.removefromlist,
+#Clear:hover {
+  background-color: #fa5700;
+}
+
+#sprite {
+  width: 20%;
+  border-radius: 15px;
+  animation: imgPokemon 1s ease-in-out;
+}
+
+@keyframes imgPokemon {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+#container-fav-pokemon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#fav {
+  border-bottom: 2px solid orange;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #container,
+  #container-fav-pokemon {
+    width: 80%;
+  }
+}
